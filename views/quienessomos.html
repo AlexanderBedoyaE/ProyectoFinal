@@ -52,6 +52,112 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../views/contacto.html"><img src="../img/formularios-de-google.png" alt="icono"> Contactanos</a>
                     </li>
+                    <li class="nav-item">
+                        <!-- Button trigger modal -->
+                        <div class="ingresar">
+                            <img src="../img/usuario.png" alt="icono" data-toggle="modal" data-target="#exampleModal2">
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Ingresar</h5><!--Si la persona ya esta registrada podra ingresar a la pagina sin nigun problema-->
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1"><h5>Usuario</h5></label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresar Usuario">                            
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1"><h5>Contraseña</h5></label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingresar Contraseña">
+                                                    <small id="emailHelp" class="form-text text-muted"><a href="">Olvidaste la contraseña</a></small>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Ingresar</button>
+                                            </form>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>    
+                    </li>
+                    <li class="nav-item">
+                        <!-- Button trigger modal -->
+                        <div class="registrar"><!--se decide hacer unregistro por si la persona desea tener cuenta propia en la pagina, se piden los datos para almacenarlos en una base de datos la cual no esta aun creada-->
+                            <img src="../img/editar.png" alt="icono" data-toggle="modal" data-target="#exampleModal1">
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="needs-validation" novalidate>
+                                                <div class="form-row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="validationTooltip01">Nombre</label>
+                                                        <input type="text" class="form-control" id="validationTooltip01" placeholder="Nombre" required>
+                                                        <div class="valid-tooltip">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="validationTooltip02">Apellidos</label>
+                                                        <input type="text" class="form-control" id="validationTooltip02" placeholder="Apellidos" required>
+                                                        <div class="valid-tooltip">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mb-3">
+                                                        <label for="validationTooltipUsername">Email</label>
+                                                        <div class="input-group">
+                                                            <input type="email" class="form-control" id="validationTooltipUsername" placeholder="Email" aria-describedby="validationTooltipUsernamePrepend" required>
+                                                            <div class="invalid-tooltip">
+                                                                Please choose a unique and valid username.
+                                                            </div>
+                                                        </div>
+                                                    </div>     
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="validationTooltip03">Ciudad</label>
+                                                        <input type="text" class="form-control"  id="validationTooltip03" placeholder="Ciudad" required>
+                                                        <div class="invalid-tooltip">
+                                                            Please provide a valid city.
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 mb-3">
+                                                        <label for="validationTooltip04">Estado</label>
+                                                        <input type="text" class="form-control" id="validationTooltip04" placeholder="Estado" required>
+                                                        <div class="invalid-tooltip">
+                                                            Please provide a valid state.
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 mb-3">
+                                                    
+                                                        <label for="validationTooltip05">Codigo Postal</label>
+                                                        <input type="text" class="form-control" id="validationTooltip05" placeholder="codigo" required>
+                                                        <div class="invalid-tooltip">
+                                                            Please provide a valid zip.
+                                                        </div>
+                                                    </div>                                                  
+                                                </div>
+                                                <button class="btn btn-primary" type="submit">Registrarse</button>
+                                            </form>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </li>
                 </ul>
             </div>
         </nav>
