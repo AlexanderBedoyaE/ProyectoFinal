@@ -1,0 +1,1410 @@
+@import "./layout/_estructura.scss";
+@import "_colores.scss";
+@import "_fuentes.scss";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*--------------------------------------------Comienzo de la pagina de index-----------------------*/
+.bg-color{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+
+    .navbar-brand:hover{
+        font-weight: bold;
+    }
+    .navbar-nav{
+        .nav-item{
+            .ingresar{
+                img{
+                    width: 20px;
+                    margin-top: 11px;
+                    margin-right: 2px;
+                }
+
+                img:hover{
+                    cursor: pointer;
+                }
+
+                .modal-dialog{
+                    margin-top: 10%;
+                    text-align: center;
+                }
+
+                .modal-header{
+                    .modal-title{
+                    text-align: center;
+                    }
+                }
+
+                .modal-body{
+                    text-align: center;
+                }
+            }
+
+            .registrar{
+                img{
+                    width: 20px;
+                    margin-top: 11px;
+                    margin-left: 12px;
+                }
+
+                img:hover{
+                    cursor: pointer;
+                }
+
+                .modal-dialog{
+                    margin-top: 10%;
+                }
+                
+                .modal-body{
+                    text-align: center;
+                }
+            }
+
+            .nav-link{
+                img{
+                    width: 20px;
+                    margin-top: -5px;
+                    margin-right: 2px;
+                }
+            }
+        }
+        li:hover>ul.dropdown-menu{
+            display: block;
+        }    
+
+        .dropdown-submenu{
+            position: relative;
+        }
+        
+        .dropdown-submenu{
+            
+            .dropdown-menu{
+                top: 0;
+                margin-top: -5px;
+                left: 100%;
+            }
+        }     
+    }        
+}
+
+.banner{
+    position: relative;
+    background-image: url(../../img/banner2.jpg);
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .tittle{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btn-banner{
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        margin-left: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        a{
+            text-decoration: none;
+            padding: 20px 20px 20px 20px;
+        }
+    }
+}
+
+.videoJuegos{
+    margin-bottom: 30px;
+    
+    .containerJuegos{
+        h2{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        }
+
+        .card-deck{
+        margin:50px 50px 30px 50px;
+            
+            .card{
+            transition: transform all 0.25s;
+            }
+
+            .card:hover{
+            transform: rotateY(-15px);
+            box-shadow: 0px 12px 16px rgba(0,0,0,0.2);
+            }    
+
+            .card{
+                
+                a{
+                    img{
+                    height: 15vh;
+                    }
+                }
+                
+                .card-body{
+                    text-align: center;
+                    .card-title{
+                    text-align: center;
+                    }
+
+                    .card-text{
+                        align-items: center;
+                        text-align: center;
+                        justify-content: center;
+                    }
+
+                    .modal-dialog{
+                        margin-top: 15%;
+                    }
+                }    
+            }
+            .ver{
+                text-align: center;
+                margin-top: 120px;
+            }
+        }
+    }
+}
+
+.containerConsolas{
+    
+    h2{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .card-deck{
+        margin:50px 50px 30px 50px;
+        
+        .card{
+        transition: transform all 0.25s;
+        
+        a{
+            img{
+            height: 17vh;
+            }
+        }
+
+        }
+        .card:hover{
+        transform: rotateY(-15px);
+        box-shadow: 0px 12px 16px rgba(0,0,0,0.2);
+        }
+        
+        .card{
+            
+            .card-body{
+                text-align: center;
+                .card-title{
+                    text-align: center;
+                }
+
+                .card-text{
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+
+                    .modal-dialog{
+                        margin-top: 15%;
+                    }
+                }
+                    
+                img{
+                    width: auto;
+                    height: 23vh;
+                }
+                    
+            }
+        }
+
+        .ver{
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-top: 130px;
+        }
+    }
+}
+
+.containerCuentas {
+    h2{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .card-deck{
+        margin:50px 50px 30px 50px;
+        .card{
+        transition: transform all 0.25s;
+        }
+
+        .card:hover{
+        transform: rotateY(-15px);
+        box-shadow: 0px 12px 16px rgba(0,0,0,0.2);
+        }
+        
+        .card{
+            
+            .card-body{
+                text-align: center;
+                .card-title{
+                    text-align: center;
+                }
+
+                .card-text{
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                }
+
+                .modal-dialog{
+                    margin-top: 15%;
+                }
+                    
+                img{
+                    width: auto;
+                }
+                
+            }
+        }
+
+        .ver{
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-top: 130px;
+        }
+    }
+}
+
+.tituloProductos{
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.containerCarrusel{
+    .carousel-item{
+        .image{
+            width: 100%;
+            height: 70vh;
+        }
+    }
+}
+
+.tituloJuegos{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.containerPs3{
+    
+    h2{
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        margin-left: 15px;
+    }
+
+    .card{
+        transition: transform all 0.25s;
+    
+        .card:hover{
+        transform: rotateY(-15px);
+        box-shadow: 0px 12px 16px rgba(0,0,0,0.2);
+        }
+    }
+    
+    .card-img-top{
+        height: 30vh;//Acomodar en responsive
+    }
+
+    .card-body{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        .modal-dialog{
+            margin-top: 15%;
+        }
+    }
+}
+
+.containerPs4{
+    
+    h2{
+        text-align: left;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-left: 15px;
+    }
+
+    .card-body{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        .modal-dialog{
+            margin-top: 15%;
+        }
+    }
+}
+
+
+.tituloConsolas{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.containerConsolas{
+    .card-body{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.containerOfertas{
+
+    .tituloOfertas{
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .ofertasCartas{
+        padding: 100px 100px 100px 100px;
+        background-image: url(../../img/fondo_Precios.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .ofertasJuegos{
+        text-align: center;
+        color: white;
+        padding: 10px;
+
+        .tituloJuego{
+            font-size: 45px;
+        }
+    }
+}
+    
+.containerCarrousel{
+    .carousel-inner{
+            
+        .card-group{
+                
+            .card{
+                transition: transform all 0.25s;
+
+            .card:hover{
+                transform: rotateY(-15px);
+                box-shadow: 0px 12px 16px rgba(0,0,0,0.2);
+            }
+                .card-img-top{
+                    height: 25vh;
+                }
+
+                .card-body{
+                    text-align: center;
+                    .card-title{
+                        font-size: 15pt;
+                    }
+                    .card-text{
+                        font-size: 13pt;
+                    }
+
+
+                    span{
+                        text-decoration: line-through;
+                    }
+
+                    .modal-dialog{
+                        margin-top: 15%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.containerCartasOfertas{
+    margin: 20px 20px 20px 20px;
+        .card{
+            transition: transform all 0.25s;
+        }
+        .card:hover{
+        transform: rotateY(-15px);
+        box-shadow: 0px 12px 16px rgba(0,0,0,0.2);
+        }
+        
+        .card{
+            .card-body{
+            text-align: center;
+            .card-title{
+                font-size: 18pt;
+            }
+            .card-text{
+                font-size: 13pt;
+            }
+
+            span{
+                text-decoration: line-through;
+            }
+            
+            .modal-dialog{
+                margin-top: 15%;
+            }
+        }
+    }
+}
+
+.containerCartas{
+    .ofertasCuentas{
+        padding: 100px 100px 100px 100px;
+        background-image: url(../../img/fondoCartas.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .carruoselLado{
+            width: 60%;
+            margin-left: 90%;
+            .card-group{
+                .card{
+                    transition: transform all 0.25s;
+                }
+                .card:hover{
+                transform: rotateY(-15px);
+                box-shadow: 0px 12px 16px rgba(0,0,0,0.2);
+                }
+        
+                .card{
+                    img{
+                        height: 30vh;
+                        width: 100%;
+                    }
+
+                    .card-body{
+                        text-align: center;
+
+                        .card-title{
+                            font-size: 15pt;
+                        }
+                        .card-text{
+                            font-size: 13pt;
+                        }
+                        
+                        span{
+                            text-decoration: line-through;
+                        }
+                        
+                        .modal-dialog{
+                            margin-top: 15%;
+                        }
+                    }
+                }
+            }
+        
+            .ofertaCuenta{
+                text-align: center;
+                padding: 10px;
+        
+                .tituloCuenta{
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+}
+
+.containerCuentasOfertas{
+    margin: 30px 20px 20px 20px;
+
+    .card-group{
+        .card{
+            transition: transform all 0.25s;
+        }
+        .card:hover{
+        transform: rotateY(-15px);
+        box-shadow: 0px 12px 16px rgba(0,0,0,0.2);
+        }
+
+        .card-body{
+            text-align: center;
+            .card-title{
+                font-size: 18pt;
+            }
+            .card-text{
+                font-size: 13pt;
+            }
+
+            span{
+                text-decoration: line-through;
+            }
+            
+            .modal-dialog{
+                margin-top: 15%;
+            }
+        }
+    }
+}
+
+.containerConsolasOfertas{
+    padding: 100px 100px 100px 100px;
+    background-image: url(../../img/fondoConsolas.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .containerCarrousel{
+        width: 70%;
+        .card-group{
+            .card{
+                transition: transform all 0.25s;
+            }
+            .card:hover{
+            transform: rotateY(-15px);
+            box-shadow: 0px 12px 16px rgba(0,0,0,0.2);
+            }
+
+            .card{
+                img{
+                    height: 30vh;
+                }
+                .card-body{
+                    text-align: center;
+                    .card-title{
+                        font-size: 18pt;
+                    }
+                    .card-text{
+                        font-size: 13pt;
+                    }
+            
+                    span{
+                    text-decoration: line-through;
+                    }
+                    
+                    .modal-dialog{
+                        margin-top: 15%;
+                    }
+                }    
+            }
+        }
+        .ofertaConsola{
+            text-align: center;
+            padding: 10px;
+    
+            .tituloConsola{
+                font-size: 45px;
+            }
+        }
+    }
+}
+
+.containerConsolaOferta{
+    margin: 30px 20px 20px 20px;
+
+    .card-group{
+        .card{
+            transition: transform all 0.25s;
+
+            img{
+                height: 30vh;
+            }
+        }
+        .card:hover{
+        transform: rotateY(-15px);
+        box-shadow: 0px 12px 16px rgba(0,0,0,0.2);
+        }
+
+        .card-body{
+            text-align: center;
+            .card-title{
+                font-size: 18pt;
+            }
+            .card-text{
+                font-size: 13pt;
+            }
+
+            span{
+                text-decoration: line-through;
+            }
+
+            .modal-dialog{
+                margin-top: 15%;
+            }
+        }
+    }
+}
+
+.containerQuienesSomos{
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.parrafoInicial{
+    text-align: center;
+    font-size: 19pt;
+    margin: 20px;
+    font-weight: bold;
+
+}
+
+.presentacion{
+    text-align: center;
+    font-size: 16pt;
+    margin-top: 30px;
+    font-weight:bold;
+}
+
+.containerFigures{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 30px;
+
+    .card{
+        transition: transform all 0.25s;
+        
+        .card-body{
+            text-align: center;
+        }
+
+        span{
+            font-weight: bold;
+        }
+    }
+    .card:hover{
+    transform: rotateY(-15px);
+    box-shadow: 0px 12px 16px rgba(0,0,0,0.2);
+    }
+}
+
+.Organizar{
+    
+    .tituloMision{
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .containerMision{
+        text-align:justify;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .tituloFilosofia{
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .containerFilosofia{
+        text-align:justify;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    
+    .tituloVision{
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .containerVision{
+        text-align:justify;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+}
+
+.organizarExperiencias{
+    .usuarios{
+        display: flex;
+        .usuario{
+            
+            img{
+                width: 20vw;
+                height: 40vh;
+                margin-left: 15%;
+            }
+            
+            p{
+                margin-left: 15px;
+                margin-right: 20px;
+                text-align: justify;
+            }
+            
+            .footerExperiencias{
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .usuariosAbajo{
+        display: flex;
+        .usuario{
+            img{
+                width: 20vw;
+                height: 40vh;
+                margin-left: 15%;
+            }
+            p{
+                margin-left: 15px;
+                margin-right: 20px;
+                text-align: justify;
+            }
+
+            .footerExperiencias{
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.experiencias{
+    text-align: center;
+}
+
+.containerContacto{
+
+    .tituloContacto{
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.contenedor{
+    .form {
+        box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+        background-color: lightgray;
+        width: 90%;
+        max-width: 650px;
+        margin: auto;
+        margin-top: 95px;
+        padding: 5px 35px;
+        padding-bottom: 30px;
+        border-radius: 3px;
+        
+        .form-label{
+            display: block;
+            font-size: 16px;
+            color:black;
+            position: relative;
+        }
+        
+        .form-input{
+            background:white;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid black;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 2px;
+            font-size: 14px;
+            color: black;
+        }
+
+        .form-textarea{
+            background:white;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid black;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 2px;
+            font-size: 14px;
+            color: black;
+        }
+
+        .btn-submit{
+            width: 100%;
+            background-color: gray;
+            padding: 15px 0;
+            border-radius: 8px;
+            border: none;
+            color: black;
+            outline: none;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .btn-submit:hover{
+            background-color: lightgray;
+        }
+
+        .form-header{ 
+
+            .form-titulo{
+            font-weight: normal;
+            text-align: center;
+            color: black;
+            font-size: 40px;
+            
+            span{
+                color:black;
+                text-align: center;
+                font-size: 40px;
+                }
+            }
+        }
+    }        
+}
+
+
+@media (max-width: 575.98px){ 
+    
+    .bg-color{
+        .navbar-nav{
+            .nav-item{
+    
+                .registrar{
+                    img{
+                    width: 20px;
+                    margin-top: 11px;
+                    margin-left: 0px;
+                    }
+                }
+            }        
+        }
+    }    
+
+
+    .banner{
+        background-image: url(../../img/banner2.jpg);
+        background-position: center;
+        width: 104%;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        .tittle{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+            h1{            
+            font-size: 35pt;
+            }
+        }
+    
+        .btn-banner{
+        position: absolute;
+        width: 45%;
+        height: 30%;
+        margin-left: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+            a{
+            text-decoration: none;
+            padding: 20px 20px 20px 20px;
+            }
+        }
+    }
+    
+    .videoJuegos{
+        
+        .containerJuegos{
+            
+            .card-deck{
+                    
+                .card{
+                    
+                    a{
+                        img{
+                        height: 24vh;
+                        }
+                    }
+                    
+                    .card-body{
+                    
+                        .modal-dialog{
+                            margin-top: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }        
+
+    .containerConsolas{
+
+        .card-deck{
+        
+            .card{
+                
+                a{
+                    img{
+                    height: 24vh;
+                    }
+                }
+                
+                .card-body{
+
+                    .modal-dialog{
+                        margin-top: 50%;
+                    }
+                }    
+            }
+        }  
+    }
+
+    .containerCuentas {
+    
+        .card-deck{
+            
+            .card{
+                
+                .card-body{
+    
+                    .modal-dialog{
+                        margin-top: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .containerCarrusel{
+        .carousel-item{
+            .image{
+                width: 100%;
+                height: 40vh;
+            }
+        }
+    }
+    
+    .containerPs3{
+
+        .card-body{
+    
+            .modal-dialog{
+                margin-top: 50%;
+            }
+        }
+    }
+    
+    .containerPs4{
+    
+        .card-body{
+    
+            .modal-dialog{
+                margin-top: 50%;
+            }
+        }
+    }
+
+
+    .containerOfertas{
+    
+        .ofertasCartas{
+            padding: 50px 50px 50px 50px;
+        }
+    }
+        
+    .containerCarrousel{
+        .carousel-inner{
+                
+            .card-group{
+                    
+                .card{
+                    transition: transform all 0.25s;
+    
+                .card:hover{
+                    transform: rotateY(-15px);
+                    box-shadow: 0px 12px 16px rgba(0,0,0,0.2);
+                }
+                    .card-img-top{
+                        height: 25vh;
+                    }
+    
+                    .card-body{
+                        text-align: center;
+                        .card-title{
+                            font-size: 15pt;
+                        }
+                        .card-text{
+                            font-size: 13pt;
+                        }
+    
+    
+                        span{
+                            text-decoration: line-through;
+                        }
+    
+                        .modal-dialog{
+                            margin-top: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .containerCartasOfertas{
+        margin: 20px 20px 20px 20px;
+            .card{
+                transition: transform all 0.25s;
+            }
+            .card:hover{
+            transform: rotateY(-15px);
+            box-shadow: 0px 12px 16px rgba(0,0,0,0.2);
+            }
+            
+            .card{
+                .card-body{
+                text-align: center;
+                .card-title{
+                    font-size: 18pt;
+                }
+                .card-text{
+                    font-size: 13pt;
+                }
+    
+                span{
+                    text-decoration: line-through;
+                }
+                
+                .modal-dialog{
+                    margin-top: 50%;
+                }
+            }
+        }
+    }
+    
+    .containerCartas{
+        .ofertasCuentas{
+            padding: 50px 50px 50px 50px;
+            background-image: url(../../img/fondoCartas.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+            .carruoselLado{
+                width: 100%;
+                margin-left: 0%;
+                .card-group{
+                    
+                    .card{
+                    
+                        .card-body{
+                        
+                            .modal-dialog{
+                                margin-top: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .containerCuentasOfertas{
+        
+        .card-group{
+    
+            .card-body{
+
+                .modal-dialog{
+                    margin-top: 50%;
+                }
+            }
+        }
+    }
+    
+    .containerConsolasOfertas{
+        padding: 50px 50px 50px 50px;
+    
+        .containerCarrousel{
+            width: 110%;
+            .card-group{
+    
+                .card{
+                    img{
+                        height: 30vh;
+                    }
+                    .card-body{
+                        .modal-dialog{
+                            margin-top: 50%;
+                        }
+                    }    
+                }
+            }
+        }
+    }
+    
+    .containerConsolaOferta{
+        margin: 30px 20px 20px 20px;
+    
+        .card-group{
+            
+            .card-body{
+                
+                .modal-dialog{
+                    margin-top: 50%;
+                }
+            }
+        }
+    }
+
+
+    .parrafoInicial{
+        text-align: center;
+        font-size: 19pt;
+        margin: 20px;
+        font-weight: bold;
+
+    }
+
+    .presentacion{
+        text-align: center;
+        font-size: 16pt;
+        margin-top: 30px;
+        font-weight:bold;
+    }
+
+    .containerFigures{
+        display: block;
+    }
+
+    .Organizar{        
+        
+        .containerMision{
+            text-align:justify;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .containerFilosofia{
+            text-align:justify;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .containerVision{
+            text-align:justify;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    .organizarExperiencias{
+        .usuarios{
+            display: block;
+            .usuario{
+                
+                img{
+                    width: auto;
+                    height: 40vh;
+                    margin-left: 15%;
+                }
+                
+                p{
+                    margin-left: 15px;
+                    margin-right: 20px;
+                    text-align: justify;
+                }
+                
+                .footerExperiencias{
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .usuariosAbajo{
+            display: block;
+            .usuario{
+                img{
+                    width: auto;
+                    height: 40vh;
+                }    
+            }
+        }
+    }
+
+    .containerContacto{
+
+        .tituloContacto{
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    .containerContactar{
+        display: block;
+    
+        .mapUbicacion{
+            margin-left: 0px;
+            width: 12vw;
+            height: 12vh;
+        }
+    
+        .formulario{
+        margin-left: 0px;
+    
+            form{
+                border: 2px solid black;
+                display: flex;
+                flex-direction: column;
+                margin-right: 0px;
+                padding: 15px 15px 15px 15px;
+                
+                label{
+                margin-bottom: 10px;
+                font-size: 13pt;
+                text-align: left;
+                }
+    
+                .centrar{
+                    text-align: center;
+                    font-size: 15pt
+                }
+            
+                input{
+                padding: 0px -20px 0px -20px;
+                margin-bottom: 10px;
+                }
+            
+                .checkbox{
+                    margin-top: 5px;
+                    margin-left: 5px;
+                }
+                
+                span{
+                    margin: 0px 25px 0px 25px;
+                    text-align:center;
+                }
+            
+                .enviar{
+                    padding: 5px 5px 5px 5px;
+                }
+            }
+        }
+    
+    }
+
+    .contenedor{
+        
+        .form {
+            box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+            background-color: lightgray;
+            width: 90%;
+            max-width: 650px;
+            margin: auto;
+            margin-top: 95px;
+            padding: 5px 35px;
+            padding-bottom: 30px;
+            border-radius: 3px;
+            
+            .form-label{
+                display: block;
+                font-size: 16px;
+                color:black;
+                position: relative;
+            }
+            
+            .form-input{
+                background:white;
+                border: none;
+                outline: none;
+                border-bottom: 2px solid black;
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 20px;
+                border-radius: 2px;
+                font-size: 14px;
+                color: black;
+            }
+    
+            .form-textarea{
+                background:white;
+                border: none;
+                outline: none;
+                border-bottom: 2px solid black;
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 20px;
+                border-radius: 2px;
+                font-size: 14px;
+                color: black;
+            }
+    
+            .btn-submit{
+                width: 100%;
+                background-color: gray;
+                padding: 15px 0;
+                border-radius: 8px;
+                border: none;
+                color: black;
+                outline: none;
+                cursor: pointer;
+                font-size: 20px;
+            }
+    
+            .btn-submit:hover{
+                background-color: lightgray;
+            }
+    
+            .form-header{ 
+    
+                .form-titulo{
+                font-weight: normal;
+                text-align: center;
+                color: black;
+                font-size: 40px;
+                
+                span{
+                    color:black;
+                    text-align: center;
+                    font-size: 40px;
+                    }
+                }
+            }
+        }        
+    }
+}    

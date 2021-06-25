@@ -1,0 +1,29 @@
+/*---------------------------------Solo para estructura de las paginas------------------------------*/
+
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+footer{
+    background-color: lightgray;
+    .textoFooter{
+        text-align: justify;
+    }
+    .redes{
+        ul{
+            li{
+                a{
+                    img{
+                        width: 25px;
+                        transition: transform .2;
+                    }    
+                
+                    img:hover{
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }    
+    }    
+}

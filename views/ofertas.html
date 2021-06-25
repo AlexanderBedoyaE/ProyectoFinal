@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--conexion con bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Conexion con scss-->
+    <link rel="stylesheet" href="../assets/css/archivos.css">
+    <!--Link de bootstrap Responsiva-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Ofertas</title>
+</head>
+<body>
+    <header>
+        <!--Menu-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-color">
+            <a class="navbar-brand" href="../index.html">PlayGamesArt</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html"><img src="../img/home.png" alt="icono">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="../views/productos.html" ><img src="../img/control-de-juego.png" alt="iconoproduct" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Juegos</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#PS3">Ps3</a></li>
+                                    <li><a class="dropdown-item" href="#PS4">Ps4/Ps5 </a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Consolas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../views/ofertas.html"> <img src="../img/descuento.png" alt="icono"> Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../views/quienessomos.html"><img src="../img/ordenador-portatil.png" alt="icono"> Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../views/contacto.html"><img src="../img/formularios-de-google.png" alt="icono"> Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Button trigger modal -->
+                        <div class="ingresar">
+                            <img src="../img/usuario.png" alt="icono" data-toggle="modal" data-target="#exampleModal2">
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Ingresar</h5><!--Si la persona ya esta registrada podra ingresar a la pagina sin nigun problema-->
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1"><h5>Usuario</h5></label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresar Usuario">                            
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1"><h5>Contraseña</h5></label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingresar Contraseña">
+                                                    <small id="emailHelp" class="form-text text-muted"><a href="">Olvidaste la contraseña</a></small>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Ingresar</button>
+                                            </form>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>    
+                    </li>
+                    <li class="nav-item">
+                        <!-- Button trigger modal -->
+                        <div class="registrar"><!--se decide hacer unregistro por si la persona desea tener cuenta propia en la pagina, se piden los datos para almacenarlos en una base de datos la cual no esta aun creada-->
+                            <img src="../img/editar.png" alt="icono" data-toggle="modal" data-target="#exampleModal1">
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="needs-validation" novalidate>
+                                                <div class="form-row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="validationTooltip01">Nombre</label>
+                                                        <input type="text" class="form-control" id="validationTooltip01" placeholder="Nombre" required>
+                                                        <div class="valid-tooltip">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="validationTooltip02">Apellidos</label>
+                                                        <input type="text" class="form-control" id="validationTooltip02" placeholder="Apellidos" required>
+                                                        <div class="valid-tooltip">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mb-3">
+                                                        <label for="validationTooltipUsername">Email</label>
+                                                        <div class="input-group">
+                                                            <input type="email" class="form-control" id="validationTooltipUsername" placeholder="Email" aria-describedby="validationTooltipUsernamePrepend" required>
+                                                            <div class="invalid-tooltip">
+                                                                Please choose a unique and valid username.
+                                                            </div>
+                                                        </div>
+                                                    </div>     
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="validationTooltip03">Ciudad</label>
+                                                        <input type="text" class="form-control"  id="validationTooltip03" placeholder="Ciudad" required>
+                                                        <div class="invalid-tooltip">
+                                                            Please provide a valid city.
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 mb-3">
+                                                        <label for="validationTooltip04">Estado</label>
+                                                        <input type="text" class="form-control" id="validationTooltip04" placeholder="Estado" required>
+                                                        <div class="invalid-tooltip">
+                                                            Please provide a valid state.
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 mb-3">
+                                                    
+                                                        <label for="validationTooltip05">Codigo Postal</label>
+                                                        <input type="text" class="form-control" id="validationTooltip05" placeholder="codigo" required>
+                                                        <div class="invalid-tooltip">
+                                                            Please provide a valid zip.
+                                                        </div>
+                                                    </div>                                                  
+                                                </div>
+                                                <button class="btn btn-primary" type="submit">Registrarse</button>
+                                            </form>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Fin del menú-->
+    <!--comienzo de las ofertas dirigidas a los clientes, en esta seccion se utilizan carruseles, los cuales al arrastrarse les mostraran a los clientes los juegos que hay-->
+    <section>
+        <!-- el row y el col ayudaran mucho al momento del responsive-->
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <div class="containerOfertas">
+                    <div class="tituloOfertas">
+                        <h2>Ofertas</h2>
+                    </div>
+                    <div class="ofertasCartas">
+                        <div class="row">
+                            <div class="col-lg-8 col-sm-12">
+                                <div class="ofertasJuegos">
+                                    <h2 class="tituloJuego">Ofertas de Juegos</h2>
+                                </div>
+                                <div class="containerCarrousel">
+                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="card-group">
+                                                    <div class="card">
+                                                        <img src="../img/assassingn´s creed.jpg" class="card-img-top" alt="image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Assassing´s Creed</h5>
+                                                            <p class="card-text">Precio <span> 25USD</span> <br> Ahora 12USD</p>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                                Comprar
+                                                            </button>
+                                                            <!--Se decide tambien agregar modales los cuales ayudaran al asegurar el cliente de la compra-->
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                        ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="../img/Ghost-Recon.jpg" class="card-img-top" alt="image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Ghost Recon</h5>
+                                                            <p class="card-text">Precio <span> 17USD</span> <br> Ahora 10USD</p>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                                Comprar
+                                                            </button>
+                                                            <!--Se decide tambien agregar modales los cuales ayudaran al asegurar el cliente de la  compra-->                                                    
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                        ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="../img/Destiny.jpg" class="card-img-top" alt="image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Destiny</h5>
+                                                            <p class="card-text">Precio <span> 19USD</span> <br> Ahora 15USD</p>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                                Comprar
+                                                            </button>
+                                                            <!--Se decide tambien agregar modales los cuales ayudaran al asegurar el cliente de la compra-->
+                                                            
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                        ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="card-group">
+                                                    <div class="card">
+                                                        <img src="../img/batman-arkham.jpg" class="card-img-top" alt="image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Batman Arkham</h5>
+                                                            <p class="card-text">Precio <span> 18USD</span> <br> Ahora 14USD</p>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                                Comprar
+                                                            </button>
+                                                            <!--Se decide tambien agregar modales los cuales ayudaran al asegurar el cliente de la compra-->
+                                                            
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                        ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="../img/warzone.jpg" class="card-img-top" alt="image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Call Dutty Warzone</h5>
+                                                            <p class="card-text">Precio <span> 10USD</span> <br> Ahora 5USD</p>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                                Comprar
+                                                            </button>
+                                                            <!--Se decide tambien agregar modales los cuales ayudaran al asegurar el cliente de la compra-->
+                                                            
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                        ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>                                            
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="../img/far-cry-3.jpg" class="card-img-top" alt="image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Far Cry 3</h5>
+                                                            <p class="card-text">Precio <span> 8USD</span> <br> Ahora 4USD</p>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                                Comprar
+                                                            </button>
+                                                            
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                        ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="card-group">
+                                                    <div class="card">
+                                                        <img src="../img/fifa-18.jpg" class="card-img-top" alt="image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Fifa 18</h5>
+                                                            <p class="card-text">Precio <span> 15USD</span> <br> Ahora 7USD</p>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                                Comprar
+                                                            </button>
+                                                            
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                        ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="../img/pes.jpg" class="card-img-top" alt="image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Pes 21</h5>
+                                                            <p class="card-text">Precio <span> 20USD</span> <br> Ahora 10USD</p>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                                Comprar
+                                                            </button>
+                                                            
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                        ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="../img/outriders.jpg" class="card-img-top" alt="image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Outriders</h5>
+                                                            <p class="card-text">Precio <span> 17USD</span> <br> Ahora 10USD</p>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                                Comprar
+                                                            </button>
+                                                            
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                        ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"  data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- se finaliza esta sección-->
+    <!--Esta sección mostrara mas juegos en descuento o oferta para los clientes, cabe resaltar que esta parte no es movible-->
+    <section>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <div class="containerCartasOfertas">
+                    <div class="row row-cols-1 row-cols-md-3">
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="../img/far-cry-4.jpg" class="card-img-top" alt="Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Far Cry 4</h5>
+                                    <p class="card-text">Precio <span>10USD</span> <br> Ahora 5USD</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="../img/uncharted.jpg" class="card-img-top" alt="Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Uncharted</h5>
+                                    <p class="card-text">Precio <span>15USD</span> <br> Ahora 10USD</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="../img/Battlefield-3-PS3.jpg" class="card-img-top" alt="Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Battlefield 3</h5>
+                                    <p class="card-text">Precio <span>10USD</span> <br> Ahora 7USD</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="../img/grand.jpg" class="card-img-top" alt="Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Grand theft Auto V</h5>
+                                    <p class="card-text">Precio <span>18USD</span> <br> Ahora 10USD</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="../img/far cry 6.jpg" class="card-img-top" alt="Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Far Cry 6</h5>
+                                    <p class="card-text">Precio <span>20USD</span> <br> Ahora 14USD</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="../img/destiny-2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Destiny 2</h5>
+                                    <p class="card-text">Precio <span>17USD</span> <br> Ahora 13USD</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>        
+    </section>
+    <!--Fin de esta sección-->
+    <!--Esta sección demostrará las cuentas que hay en oferta para todo el publico, esta sección es movible y su fondo es estatico y dinamico al hacer scroll-->
+    <section>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <div class="containerCartas">
+                    <div class="ofertasCuentas">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-12">
+                                <div class="carruoselLado">
+                                    <div class="ofertaCuenta">
+                                        <h2 class="tituloCuenta">Ofertas de Cuentas</h2>
+                                    </div>
+                                    <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="card-group">
+                                                    <div class="card">
+                                                        <img src="../img/s.jpg" class="card-img-top" alt="Image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Tarjetas PlayStore 3 Meses</h5>                                                                                                                        
+                                                            <p class="card-text">Precio <span>50USD</span><br> Ahora 34USD</p>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                                Comprar
+                                                            </button>
+                                                            
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                        ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="../img/s.jpg" class="card-img-top" alt="Image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Tarjetas PlayStore 6 Meses</h5>                                                            
+                                                            <p class="card-text">Precio <span>80USD</span><br> Ahora 40USD</p>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                                Comprar
+                                                            </button>
+                                                            
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                        ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="card-group">
+                                                    <div class="card">
+                                                        <img src="../img/p.jpg" class="card-img-top" alt="Image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Tarjetas PlayStationPlus 3 Meses</h5>
+                                                            <p class="card-text">Precio <span>50USD</span><br> Ahora 20USD</p>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                                Comprar
+                                                            </button>
+                                                            
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                        ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>                                                        
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="../img/p.jpg" class="card-img-top" alt="Image">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Tarjetas PlayStationPlus 6 Meses</h5>                            
+                                                            <p class="card-text">Precio <span>65USD</span><br> Ahora 30USD</p>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                                Comprar
+                                                            </button>
+                                                            
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                        ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div> 
+                                </div>    
+                            </div> 
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+        </div>            
+    </section>
+    <!-- Fin de esta sección-->
+    <!-- Esta sección es estatica y mostrara lagunas otras cuentas qie estaran siendo vendidas -->
+    <section>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <div class="containerCuentasOfertas">
+                    <div class="card-group">
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="../img/p.jpg" class="card-img-top" alt="Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">PlayStation Plus por 1 Año</h5>
+                                    <p class="card-text">Precio <span>300USD</span> <br> Ahora 150USD</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="../img/s.jpg" class="card-img-top" alt="Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">PlayStation Store por 1 Año</h5>
+                                    <p class="card-text">Precio <span>350USD</span> <br> Ahora 200USD</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="../img/p.jpg" class="card-img-top" alt="Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">PlayStation Plus 9 meses</h5>
+                                    <p class="card-text">Precio <span>270USD</span> <br> Ahora 180USD</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="../img/s.jpg" class="card-img-top" alt="Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">PlayStation Store 9 meses</h5>
+                                    <p class="card-text">Precio <span>300USD</span><br> Ahora 140USD</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>        
+    </section>
+    <!--Fin de la sección-->
+    <!--En esta sección se daraan a conocer a través de carruseles y cartas la venta de consolas, tambien se utilian modales para los botones-->
+    <section>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <div class="containerConsolasOfertas">
+                    <div class="col-lg-8 col-sm-12">
+                        <div class="containerCarrousel">
+                            <div class="ofertaConsola">
+                                <h2 class="tituloConsola">Ofertas de Consolas</h2>
+                            </div>
+                            <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card-group">
+                                            <div class="card">
+                                                <img src="../img/nintendo-switch-lite.jpg" class="card-img-top" alt="image">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nintendo Switch</h5>
+                                                    <p class="card-text">Precio <span> 250USD</span> <br> Ahora 200USD</p>
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                        Comprar
+                                                    </button>
+                                                            
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="../img/xbox.jpeg" class="card-img-top" alt="image">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Xbox Series</h5>
+                                                    <p class="card-text">Precio <span> 1500USD</span> <br> Ahora 1200USD</p>
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                        Comprar
+                                                    </button>
+                                                            
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card-group">
+                                            <div class="card">
+                                                <img src="../img/ps5.jpg" class="card-img-top" alt="image">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">PlayStation 5</h5>
+                                                    <p class="card-text">Precio <span> 1400USD</span> <br> Ahora 1100USD</p>
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                        Comprar
+                                                    </button>
+                                                            
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="../img/playstation-4.jpg" class="card-img-top" alt="image">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">PlayStation 4</h5>
+                                                    <p class="card-text">Precio <span> 850USD</span> <br> Ahora 750USD</p>
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                        Comprar
+                                                    </button>
+                                                            
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>                                            
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls2" role="button"  data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fin de la seccion-->
+    <!--Esta sección esta hecha con cartas estaticas para mostrar los demas productos de consolas a los clientes al igual que las otras esta contruido con cartas como ya dicho y con modales-->
+    <section>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <div class="containerConsolaOferta">
+                    <div class="card-group">
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="../img/ps vita.jpg" class="card-img-top" alt="Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">PlayStation Vita</h5>
+                                    <p class="card-text">Precio <span>450USD</span> <br> Ahora 350USD</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="../img/Nintendo-Switch.jpg" class="card-img-top" alt="Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nintendo Switch</h5>
+                                    <p class="card-text">Precio <span>300USD</span> <br> Ahora 250USD</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="../img/Playstation-Vr-Gafas-De-Realidad-Virtual.jpeg" class="card-img-top" alt="Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">PlayStation Vr Gafas</h5>
+                                    <p class="card-text">Precio <span>400USD</span> <br> Ahora 350USD</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="../img/wii.jpg" class="card-img-top" class="cambioImagen" alt="Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nintendo Wii</h5>
+                                    <p class="card-text">Precio <span>400USD</span><br> Ahora 250USD</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        Comprar
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Agregar al Carrito</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ¿Estás seguro de que deseas adquirir esta Oferta?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>        
+    </section>
+    <!--Fin de esta sección-->
+    <br><br>
+    <hr>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color pt-4">
+    
+        <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+        
+        <!-- Footer links -->
+                <div class="row text-center text-md-left mt-3 pb-3">
+        
+            <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">PlayGamesArt</h6>
+                        <p class="textoFooter">Cualquier duda o inquietud queja o reclamo no dude por favor en consultarnos estamos a su disposición, que tengan un feliz resto de dia.</p>
+                    </div>
+                    <!-- Grid column -->
+            
+                    <hr class="w-100 clearfix d-md-none">
+            
+                    <!-- Grid column -->
+                    
+            
+                <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Otras Paginas</h6>
+                        <p>
+                            <a href="https://gameshopvideojuegos.com/">GameShop</a>
+                        </p>
+                        
+                        <p>
+                            <a href="https://www.xbox.com/es-CO/live">Xbox Microsoft</a>
+                        </p>
+                
+                        <p>
+                            <a href="https://www.epicgames.com/store/es-ES/">EpicGames</a>
+                        </p>
+                
+                        <p>
+                            <a href="https://www.electronicthings.com.ar/">Electronicthings</a>
+                        </p>
+                    </div>
+            
+                <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none">
+            
+                <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+                        <p><i class="fas fa-home mr-3"></i>Palmira, Colombia</p>
+                        <p><i class="fas fa-envelope mr-3"></i>play.gamesshop03@gmail.com</p>
+                        <p><i class="fas fa-phone mr-3"></i>+57 313 663 77 33</p>
+                        <p><i class="fas fa-print mr-3"></i>+57 318 595 51 87</p>
+                    </div>
+                <!-- Grid column -->
+            
+                </div>
+            <!-- Footer links -->
+            
+                <hr>
+            
+            <!-- Grid row -->
+                <div class="row d-flex align-items-center">
+            
+                <!-- Grid column -->
+                    <div class="col-md-7 col-lg-8">
+                
+                <!--Copyright-->
+                        <p class="text-center text-md-left">© 2021 Copyright:
+                            <a href="../index.html">
+                                <strong>PlayGamesArt</strong>
+                            </a>
+                        </p>
+                    
+                    </div>
+                    
+                <hr class="w-100 clearfix d-md-none">
+                    <!-- Grid column -->
+                    <div class="redes" class="col-md-5 col-lg-4 ml-lg-0">
+                        
+                    <!-- Social buttons -->
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <a href="https://www.facebook.com/"><img src="../img/facebook.png" alt="facebook"></a>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <a href="https://web.whatsapp.com/"><img src="../img/Whatsapp.png" alt="whatsApp"></a>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <a href="https://www.instagram.com/play.gamesshop03/?hl=es-la"><img src="../img/Instagram.png" alt="Instagram"></a>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <a href="https://twitter.com/"><img src="../img/twitter.png" alt="Twitter"></a>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                        <!-- Grid column -->
+                </div>
+            <!-- Grid row --> 
+            </div>
+        <!-- Footer Links -->
+        </footer>
+    <!--Scripts-->
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

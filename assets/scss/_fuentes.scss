@@ -1,0 +1,29 @@
+.banner{
+    .tittle{
+        h1{
+        font-family: 'Roboto', sans-serif;
+        font-size: 50pt;
+        font-weight:bold;
+        }
+    }
+
+    .btn-banner{
+        a{
+            font-family: 'Roboto', sans-serif;
+            font-size: 30px;
+        }
+    }
+}
+
+.card-deck{
+    margin:50px 50px 50px 50px ;
+    .card{
+        
+        .card-body{
+            
+            .card-text{
+                font-weight:bold;
+            }
+        }    
+    }
+}

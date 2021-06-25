@@ -1,0 +1,126 @@
+//Solo coores en esta zona
+.bg-color{
+    background-color: lightgray;
+    
+    .navbar-brand{
+        color: black;
+    }
+    
+    .navbar-nav{
+        .nav-item{
+            .ingresar{
+                .modal-body{
+                    background-color: lightgray;
+                }
+            }
+
+            .registrar{
+        
+                .modal-body{
+                    background-color: lightgray;
+                }
+            }
+            .nav-link{
+                color: black;
+            }
+            .nav-link:hover{
+                color: darkblue;
+                font-weight: bold;
+            }
+        }
+    }
+}
+//---------------------------------------------------titulo-------------------------
+
+.banner{
+    .tittle{
+        h1{
+        color: white;
+        }
+    }
+    
+    .btn-banner{
+        
+        button{
+        background-color: gray;
+        border-radius: 50px;
+        }
+
+        a{
+            color: white;
+            border:3px 3px 3px 3px solid white;
+        }
+
+    }
+}
+
+.tituloProductos{
+    background-color: lightgray;
+}
+
+.containerOfertas{
+    .tituloOfertas{
+        background-color: lightgray;
+    }
+}
+
+.containerOfertas{
+
+    .ofertasJuegos{
+        color: white;
+        background-color:#151B1B;
+    }
+}
+
+.containerCartas{
+    
+    .ofertasCuentas{
+        
+        .carruoselLado{
+            
+            .ofertaCuenta{
+                color: white;
+                background-color:darkblue;
+            }
+        }
+    }
+}
+
+.containerConsolasOfertas{
+
+    .containerCarrousel{
+        
+        .ofertaConsola{
+            color: white;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,4,1) 33%, rgba(9,9,121,1) 100%);
+        }
+    }
+}
+
+.containerQuienesSomos{
+    background-color: lightgray;
+}
+
+.containerContacto{
+
+    .tituloContacto{
+        background-color: lightgray;
+    }
+}
+
+.formulario{
+    margin-left: 70px;
+
+        form{
+            background-color: rgb(148, 143, 143);
+            
+            label{
+            color: black;
+            }
+
+            .centrar{
+                color: black;
+            }
+        }
+    }
