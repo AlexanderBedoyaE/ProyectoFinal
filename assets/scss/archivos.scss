@@ -292,7 +292,8 @@
         }
     }
 }
-
+/*-------------------------------------------------Fin de la pagina Index------------------------------------*/
+/*-------------------------------------------------Comienzo de la pagina productos---------------------------*/
 .tituloProductos{
     margin-top: 50px;
     padding-top: 20px;
@@ -381,7 +382,8 @@
         justify-content: center;
     }
 }
-
+// ------------------------------------------------------Fin de la pagina de productos----------------------------------
+// ---------------------------------------------------------Comienzo de la pagina de ofertas--------------------------------
 .containerOfertas{
 
     .tituloOfertas{
@@ -662,7 +664,8 @@
         }
     }
 }
-
+// -----------------------------------------------fin de la pagina de ofertas---------------------------------------
+/*-------------------------------------------------Comienzo de la pagina quienes somos ------------------------------*/
 .containerQuienesSomos{
     text-align: center;
     margin-top: 50px;
@@ -805,7 +808,8 @@
         margin-bottom: 10px;
     }
 }
-
+/*----------------------------------------------------Fin de la pagina de quienes somos-------------------------*/
+/*----------------------------------------------------Comienzo de la pagina contactanos---------------------------*/
 .contenedor{
     .form {
         box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
@@ -884,8 +888,8 @@
         }
     }        
 }
-
-
+/*------------------------------------------------------------Fin de la pagina contactanos------------------------*/
+/*------------------------------------------------------------Comienzo del responsive en dispositivos menores que 575.98px-------------------*/
 @media (max-width: 575.98px){ 
     
     .bg-color{
@@ -1325,86 +1329,618 @@
                 }
             }
         }
-    
     }
+}    
+/*--------------------------------Fin del responsive para pantallas de de estos pixeles---------------------------------------------------*/
 
-    .contenedor{
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    
+    .bg-color{
+        .navbar-nav{
+            .nav-item{
+
+                .registrar{
+                    img{
+                    width: 20px;
+                    margin-top: 11px;
+                    margin-left: 0px;
+                    }
+                }
+            }        
+        }
+    }    
+    
+    
+    .banner{
+        background-image: url(../../img/banner2.jpg);
+        background-position: center;
+        width: 104%;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    
+        .tittle{
+        width: 95%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+            h1{            
+            font-size: 55pt;
+            }
+        }
         
-        .form {
-            box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
-            background-color: lightgray;
-            width: 90%;
-            max-width: 650px;
-            margin: auto;
-            margin-top: 95px;
-            padding: 5px 35px;
-            padding-bottom: 30px;
-            border-radius: 3px;
+        .btn-banner{
+        position: absolute;
+        width: 70%;
+        height: 30%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
             
-            .form-label{
-                display: block;
-                font-size: 16px;
-                color:black;
-                position: relative;
+            a{
+            text-decoration: none;
+            padding: 20px 20px 20px 20px;
             }
+        }
+    }
+        
+    .videoJuegos{
             
-            .form-input{
-                background:white;
-                border: none;
-                outline: none;
-                border-bottom: 2px solid black;
-                width: 100%;
-                padding: 12px;
-                margin-bottom: 20px;
-                border-radius: 2px;
-                font-size: 14px;
-                color: black;
-            }
-    
-            .form-textarea{
-                background:white;
-                border: none;
-                outline: none;
-                border-bottom: 2px solid black;
-                width: 100%;
-                padding: 12px;
-                margin-bottom: 20px;
-                border-radius: 2px;
-                font-size: 14px;
-                color: black;
-            }
-    
-            .btn-submit{
-                width: 100%;
-                background-color: gray;
-                padding: 15px 0;
-                border-radius: 8px;
-                border: none;
-                color: black;
-                outline: none;
-                cursor: pointer;
-                font-size: 20px;
-            }
-    
-            .btn-submit:hover{
-                background-color: lightgray;
-            }
-    
-            .form-header{ 
-    
-                .form-titulo{
-                font-weight: normal;
-                text-align: center;
-                color: black;
-                font-size: 40px;
+        .containerJuegos{
                 
-                span{
-                    color:black;
-                    text-align: center;
-                    font-size: 40px;
+            .card-deck{
+                display: block;
+                .card{
+                    margin-top: 10px;
+                    a{
+                        img{
+                        height: auto;
+                        }
+                    }
+                        
+                    .card-body{
+                        .card-title{
+                            font-size: 20pt;
+                        }
+                        .card-text{
+                            font-size: 15pt;       
+                        }
+    
+                        button{
+                            width: 35%;
+                            height: 20%;
+                        }
+                        .modal-dialog{
+                            margin-top: 30%;
+                        }
+                    }
+                }
+
+                .ver{
+                    font-size: 15pt;
+                }
+            }
+        }
+    }        
+    
+    .containerConsolas{
+    
+        .card-deck{
+            display: block;
+            .card{
+                margin-top: 10px;    
+                a{
+                    img{
+                    height: auto;
+                    }
+                }
+                    
+                .card-body{
+                    .card-title{
+                        font-size: 20pt;
+                    }
+                    .card-text{
+                        font-size: 15pt;       
+                    }
+
+                    button{
+                        width: 35%;
+                        height: 20%;
+                    }
+                    .modal-dialog{
+                        margin-top: 30%;
                     }
                 }
             }
-        }        
+            .ver{
+                font-size: 15pt;
+            }
+        }  
     }
-}    
+    
+    .containerCuentas {
+        
+        .card-deck{
+            display: block;
+            .card{
+                margin-top: 10px;
+                
+                .card-body{
+                    .card-title{
+                        font-size: 20pt;
+                    }
+                    .card-text{
+                        font-size: 15pt;       
+                    }
+
+                    button{
+                        width: 35%;
+                        height: 20%;
+                    }
+                    
+                    .modal-dialog{
+                        margin-top: 30%;
+                    }
+                }
+            }
+        }
+    }
+    /*------------------------------------------------index del responsive------------------------------------------*/    
+    /*------------------------------------------------pagina productos en responsive--------------------------------*/
+
+    .containerCarrusel{
+        .carousel-item{
+            .image{
+                width: 100%;
+                height: 50vh;
+            }
+        }
+    }
+        
+    .containerPs3{
+
+        .card{
+            
+            img{
+                height: auto;
+            }
+            .card-body{
+                font-size: 15pt;
+
+                .modal-dialog{
+                    margin-top: 30%;
+                }
+
+                button{
+                    width: 20%;
+                    height: 20%;
+                }
+            }
+        }
+    }
+        
+    .containerPs4{
+        
+        .card{
+            
+            img{
+                height: auto;
+            }
+            
+            .card-body{
+                font-size: 15pt;
+                
+                .modal-dialog{
+                    margin-top: 30%;
+                }
+                
+                button{
+                    width: 20%;
+                    height: 20%;
+                }    
+            }
+        }
+    }
+    .containerConsolas{
+        .card{
+            .card-body{
+                font-size: 15pt;
+
+                .modal-dialog{
+                    margin-top: 30%;
+                }
+                
+                button{
+                    width: 30%;
+                    height: 30%;
+                }
+            }
+        }
+    }
+    
+    
+    .containerOfertas{
+        
+        .ofertasCartas{
+            padding: 50px 50px 50px 50px;
+        }
+    }
+            
+    .containerCarrousel{
+        .carousel-inner{
+                    
+            .card-group{
+                display: block;
+                .card{
+                    transition: transform all 0.25s;
+        
+                .card:hover{
+                    transform: rotateY(-15px);
+                    box-shadow: 0px 12px 16px rgba(0,0,0,0.2);
+                }
+                    .card-img-top{
+                        height: auto;
+                    }
+        
+                    .card-body{
+                        text-align: center;
+
+                        .card-title{
+                            font-size: 20pt;
+                            }
+                        .card-text{
+                            font-size: 15pt;
+                        }
+
+                        span{
+                            text-decoration: line-through;
+                        }
+
+                        button{
+                            width: 35%;
+                            height: 20%;
+                        }
+        
+                        .modal-dialog{
+                            margin-top: 30%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+        
+    .containerCartasOfertas{
+        margin: 20px 20px 20px 20px;
+                
+        .card{
+            .card-body{
+                text-align: center;
+                
+                .card-title{
+                    font-size: 20pt;
+                }
+                .card-text{
+                    font-size: 15pt;
+                }
+        
+                span{
+                    text-decoration: line-through;
+                }
+
+                button{
+                    width: 35%;
+                    height: 20%;
+                }
+                    
+                .modal-dialog{
+                    margin-top: 30%;
+                }
+            }
+        }
+    }
+        
+    .containerCartas{
+        .ofertasCuentas{
+            padding: 50px 50px 50px 50px;
+            background-image: url(../../img/fondoCartas.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+            .carruoselLado{
+                width: 100%;
+                margin-left: 0%;
+                .card-group{
+                
+                    .card{
+                        img{
+                            height: auto;
+                        }
+                        .card-body{
+                            
+                            .card-title{
+                                font-size: 16pt;
+                            }
+                            .card-text{
+                                font-size: 15pt;
+                            }
+
+                            .modal-dialog{
+                                margin-top: 30%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+        
+    .containerCuentasOfertas{
+            
+        .card-group{
+        display: block;
+            .card{
+        
+                height: auto;
+                width: auto;
+            
+                .card-body{
+                    
+                    .card-title{
+                        font-size: 16pt;
+                    }
+                    .card-text{
+                        font-size: 15pt;       
+                    }
+
+                    button{
+                        width: 35%;
+                        height: 20%;
+                    }
+
+                    .modal-dialog{
+                        margin-top: 30%;
+                    }
+                }
+            }
+        }
+    }
+        
+    .containerConsolasOfertas{
+        padding: 50px 50px 50px 50px;
+        
+        .containerCarrousel{
+            width: 100%;
+            .card-group{
+        
+                .card{
+                    img{
+                        height: auto;
+                    }
+                    .card-body{
+                        
+                        .card-title{
+                            font-size: 20pt;
+                        }
+                        .card-text{
+                            font-size: 15pt;       
+                        }
+    
+                        button{
+                            width: 35%;
+                            height: 20%;
+                        }
+                        
+                        .modal-dialog{
+                            margin-top: 30%;
+                        }
+                    }    
+                }
+            }
+        }
+    }
+        
+    .containerConsolaOferta{
+        margin: 30px 20px 20px 20px;
+        
+        .card-group{
+            display: block;
+
+            .card{
+                img{
+                    height: auto;
+                }
+                .card-body{
+                    
+                    .card-title{
+                        font-size: 20pt;
+                    }
+                    .card-text{
+                        font-size: 15pt;       
+                    }
+
+                    button{
+                        width: 35%;
+                        height: 20%;
+                    }
+                    
+                    .modal-dialog{
+                        margin-top: 30%;
+                    }
+                }    
+            }
+        }
+    }
+    /*-------------------------------------------- fin responsive Ofertas--------------------------------------------------------*/
+    /*---------------------------------------------Comienzo del responsive quienes somos -----------------------------------------*/
+    
+    .parrafoInicial{
+        text-align: center;
+        font-size: 19pt;
+        margin: 20px;
+        font-weight: bold;
+    
+    }
+    
+    .presentacion{
+        text-align: center;
+        font-size: 16pt;
+        margin-top: 30px;
+        font-weight:bold;
+    }
+    
+    .containerFigures{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .card{
+            margin: 20px;
+        
+            .card-body{
+                font-size: 14pt;
+            }
+        }
+    }
+    
+    .Organizar{        
+            
+        .containerMision{
+            text-align:justify;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    
+    .containerFilosofia{
+        text-align:justify;
+        margin-left: 20px;
+        margin-right: 20px;        
+    }
+    
+    .containerVision{
+        text-align:justify;
+        margin-left: 20px;
+        margin-right: 20px;
+        }
+    }
+    
+    .organizarExperiencias{
+        .usuarios{
+            display: block;
+            .usuario{
+                    
+                img{
+                    width: auto;
+                    height: 40vh;
+                    margin-left: 30%;
+                    margin-right: 30%;
+                }
+
+                p{
+                    margin-left: 20%;
+                    margin-right: 20%;
+                    text-align: justify;
+                    font-size: 14pt;                    
+                }
+
+                .footerExperiencias{
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+        }
+    
+        .usuariosAbajo{
+            display: block;
+            .usuario{
+                img{
+                    width: auto;
+                    height: 40vh;
+                    margin-left: 30%;
+                    margin-right: 30%;
+                }
+                
+                p{
+                    margin-left: 20%;
+                    margin-right: 20%;
+                    text-align: justify;
+                    font-size: 14pt;                    
+                }
+            }
+        }
+    }
+    
+    .containerContacto{
+    
+        .tituloContacto{
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+    }
+        
+    .containerContactar{
+        display: block;
+        
+        .mapUbicacion{
+            margin-left: 0px;
+            width: 12vw;
+            height: 12vh;
+        }
+        
+        .formulario{
+        margin-left: 0px;
+        
+            form{
+                border: 2px solid black;
+                display: flex;
+                flex-direction: column;
+                margin-right: 0px;
+                padding: 15px 15px 15px 15px;
+                    
+                label{
+                margin-bottom: 10px;
+                font-size: 13pt;
+                text-align: left;
+                }
+        
+                .centrar{
+                    text-align: center;
+                    font-size: 15pt
+                }
+                
+                input{
+                padding: 0px -20px 0px -20px;
+                margin-bottom: 10px;
+                }
+                
+                .checkbox{
+                    margin-top: 5px;
+                    margin-left: 5px;
+                }
+                    
+                span{
+                    margin: 0px 25px 0px 25px;
+                    text-align:center;
+                }
+                
+                .enviar{
+                    padding: 5px 5px 5px 5px;
+                }
+            }
+        }
+    }
+}
+    

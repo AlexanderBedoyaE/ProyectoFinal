@@ -253,6 +253,8 @@ footer {
     justify-content: center;
     margin-top: 130px; }
 
+/*-------------------------------------------------Fin de la pagina Index------------------------------------*/
+/*-------------------------------------------------Comienzo de la pagina productos---------------------------*/
 .tituloProductos {
   margin-top: 50px;
   padding-top: 20px;
@@ -474,6 +476,7 @@ footer {
     .containerConsolaOferta .card-group .card-body .modal-dialog {
       margin-top: 15%; }
 
+/*-------------------------------------------------Comienzo de la pagina quienes somos ------------------------------*/
 .containerQuienesSomos {
   text-align: center;
   margin-top: 50px;
@@ -573,6 +576,8 @@ footer {
   padding-bottom: 10px;
   margin-bottom: 10px; }
 
+/*----------------------------------------------------Fin de la pagina de quienes somos-------------------------*/
+/*----------------------------------------------------Comienzo de la pagina contactanos---------------------------*/
 .contenedor .form {
   box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
   background-color: lightgray;
@@ -632,6 +637,8 @@ footer {
       text-align: center;
       font-size: 40px; }
 
+/*------------------------------------------------------------Fin de la pagina contactanos------------------------*/
+/*------------------------------------------------------------Comienzo del responsive en dispositivos menores que 575.98px-------------------*/
 @media (max-width: 575.98px) {
   .bg-color .navbar-nav .nav-item .registrar img {
     width: 20px;
@@ -823,62 +830,316 @@ footer {
           margin: 0px 25px 0px 25px;
           text-align: center; }
         .containerContactar .formulario form .enviar {
-          padding: 5px 5px 5px 5px; }
-  .contenedor .form {
-    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
-    background-color: lightgray;
-    width: 90%;
-    max-width: 650px;
-    margin: auto;
-    margin-top: 95px;
-    padding: 5px 35px;
-    padding-bottom: 30px;
-    border-radius: 3px; }
-    .contenedor .form .form-label {
-      display: block;
-      font-size: 16px;
-      color: black;
-      position: relative; }
-    .contenedor .form .form-input {
-      background: white;
-      border: none;
-      outline: none;
-      border-bottom: 2px solid black;
+          padding: 5px 5px 5px 5px; } }
+
+/*--------------------------------Fin del responsive para pantallas de de estos pixeles---------------------------------------------------*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .bg-color .navbar-nav .nav-item .registrar img {
+    width: 20px;
+    margin-top: 11px;
+    margin-left: 0px; }
+  .banner {
+    background-image: url(../../img/banner2.jpg);
+    background-position: center;
+    width: 104%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+    .banner .tittle {
+      width: 95%;
+      height: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .banner .tittle h1 {
+        font-size: 55pt; }
+    .banner .btn-banner {
+      position: absolute;
+      width: 70%;
+      height: 30%;
+      margin-left: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .banner .btn-banner a {
+        text-decoration: none;
+        padding: 20px 20px 20px 20px; }
+  .videoJuegos .containerJuegos .card-deck {
+    display: block; }
+    .videoJuegos .containerJuegos .card-deck .card {
+      margin-top: 10px; }
+      .videoJuegos .containerJuegos .card-deck .card a img {
+        height: auto; }
+      .videoJuegos .containerJuegos .card-deck .card .card-body .card-title {
+        font-size: 20pt; }
+      .videoJuegos .containerJuegos .card-deck .card .card-body .card-text {
+        font-size: 15pt; }
+      .videoJuegos .containerJuegos .card-deck .card .card-body button {
+        width: 35%;
+        height: 20%; }
+      .videoJuegos .containerJuegos .card-deck .card .card-body .modal-dialog {
+        margin-top: 30%; }
+    .videoJuegos .containerJuegos .card-deck .ver {
+      font-size: 15pt; }
+  .containerConsolas .card-deck {
+    display: block; }
+    .containerConsolas .card-deck .card {
+      margin-top: 10px; }
+      .containerConsolas .card-deck .card a img {
+        height: auto; }
+      .containerConsolas .card-deck .card .card-body .card-title {
+        font-size: 20pt; }
+      .containerConsolas .card-deck .card .card-body .card-text {
+        font-size: 15pt; }
+      .containerConsolas .card-deck .card .card-body button {
+        width: 35%;
+        height: 20%; }
+      .containerConsolas .card-deck .card .card-body .modal-dialog {
+        margin-top: 30%; }
+    .containerConsolas .card-deck .ver {
+      font-size: 15pt; }
+  .containerCuentas .card-deck {
+    display: block; }
+    .containerCuentas .card-deck .card {
+      margin-top: 10px; }
+      .containerCuentas .card-deck .card .card-body .card-title {
+        font-size: 20pt; }
+      .containerCuentas .card-deck .card .card-body .card-text {
+        font-size: 15pt; }
+      .containerCuentas .card-deck .card .card-body button {
+        width: 35%;
+        height: 20%; }
+      .containerCuentas .card-deck .card .card-body .modal-dialog {
+        margin-top: 30%; }
+  /*------------------------------------------------index del responsive------------------------------------------*/
+  /*------------------------------------------------pagina productos en responsive--------------------------------*/
+  .containerCarrusel .carousel-item .image {
+    width: 100%;
+    height: 50vh; }
+  .containerPs3 .card img {
+    height: auto; }
+  .containerPs3 .card .card-body {
+    font-size: 15pt; }
+    .containerPs3 .card .card-body .modal-dialog {
+      margin-top: 30%; }
+    .containerPs3 .card .card-body button {
+      width: 20%;
+      height: 20%; }
+  .containerPs4 .card img {
+    height: auto; }
+  .containerPs4 .card .card-body {
+    font-size: 15pt; }
+    .containerPs4 .card .card-body .modal-dialog {
+      margin-top: 30%; }
+    .containerPs4 .card .card-body button {
+      width: 20%;
+      height: 20%; }
+  .containerConsolas .card .card-body {
+    font-size: 15pt; }
+    .containerConsolas .card .card-body .modal-dialog {
+      margin-top: 30%; }
+    .containerConsolas .card .card-body button {
+      width: 30%;
+      height: 30%; }
+  .containerOfertas .ofertasCartas {
+    padding: 50px 50px 50px 50px; }
+  .containerCarrousel .carousel-inner .card-group {
+    display: block; }
+    .containerCarrousel .carousel-inner .card-group .card {
+      transition: transform all 0.25s; }
+      .containerCarrousel .carousel-inner .card-group .card .card:hover {
+        transform: rotateY(-15px);
+        box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2); }
+      .containerCarrousel .carousel-inner .card-group .card .card-img-top {
+        height: auto; }
+      .containerCarrousel .carousel-inner .card-group .card .card-body {
+        text-align: center; }
+        .containerCarrousel .carousel-inner .card-group .card .card-body .card-title {
+          font-size: 20pt; }
+        .containerCarrousel .carousel-inner .card-group .card .card-body .card-text {
+          font-size: 15pt; }
+        .containerCarrousel .carousel-inner .card-group .card .card-body span {
+          text-decoration: line-through; }
+        .containerCarrousel .carousel-inner .card-group .card .card-body button {
+          width: 35%;
+          height: 20%; }
+        .containerCarrousel .carousel-inner .card-group .card .card-body .modal-dialog {
+          margin-top: 30%; }
+  .containerCartasOfertas {
+    margin: 20px 20px 20px 20px; }
+    .containerCartasOfertas .card .card-body {
+      text-align: center; }
+      .containerCartasOfertas .card .card-body .card-title {
+        font-size: 20pt; }
+      .containerCartasOfertas .card .card-body .card-text {
+        font-size: 15pt; }
+      .containerCartasOfertas .card .card-body span {
+        text-decoration: line-through; }
+      .containerCartasOfertas .card .card-body button {
+        width: 35%;
+        height: 20%; }
+      .containerCartasOfertas .card .card-body .modal-dialog {
+        margin-top: 30%; }
+  .containerCartas .ofertasCuentas {
+    padding: 50px 50px 50px 50px;
+    background-image: url(../../img/fondoCartas.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .containerCartas .ofertasCuentas .carruoselLado {
       width: 100%;
-      padding: 12px;
-      margin-bottom: 20px;
-      border-radius: 2px;
-      font-size: 14px;
-      color: black; }
-    .contenedor .form .form-textarea {
-      background: white;
-      border: none;
-      outline: none;
-      border-bottom: 2px solid black;
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 20px;
-      border-radius: 2px;
-      font-size: 14px;
-      color: black; }
-    .contenedor .form .btn-submit {
-      width: 100%;
-      background-color: gray;
-      padding: 15px 0;
-      border-radius: 8px;
-      border: none;
-      color: black;
-      outline: none;
-      cursor: pointer;
-      font-size: 20px; }
-    .contenedor .form .btn-submit:hover {
-      background-color: lightgray; }
-    .contenedor .form .form-header .form-titulo {
-      font-weight: normal;
+      margin-left: 0%; }
+      .containerCartas .ofertasCuentas .carruoselLado .card-group .card img {
+        height: auto; }
+      .containerCartas .ofertasCuentas .carruoselLado .card-group .card .card-body .card-title {
+        font-size: 16pt; }
+      .containerCartas .ofertasCuentas .carruoselLado .card-group .card .card-body .card-text {
+        font-size: 15pt; }
+      .containerCartas .ofertasCuentas .carruoselLado .card-group .card .card-body .modal-dialog {
+        margin-top: 30%; }
+  .containerCuentasOfertas .card-group {
+    display: block; }
+    .containerCuentasOfertas .card-group .card {
+      height: auto;
+      width: auto; }
+      .containerCuentasOfertas .card-group .card .card-body .card-title {
+        font-size: 16pt; }
+      .containerCuentasOfertas .card-group .card .card-body .card-text {
+        font-size: 15pt; }
+      .containerCuentasOfertas .card-group .card .card-body button {
+        width: 35%;
+        height: 20%; }
+      .containerCuentasOfertas .card-group .card .card-body .modal-dialog {
+        margin-top: 30%; }
+  .containerConsolasOfertas {
+    padding: 50px 50px 50px 50px; }
+    .containerConsolasOfertas .containerCarrousel {
+      width: 100%; }
+      .containerConsolasOfertas .containerCarrousel .card-group .card img {
+        height: auto; }
+      .containerConsolasOfertas .containerCarrousel .card-group .card .card-body .card-title {
+        font-size: 20pt; }
+      .containerConsolasOfertas .containerCarrousel .card-group .card .card-body .card-text {
+        font-size: 15pt; }
+      .containerConsolasOfertas .containerCarrousel .card-group .card .card-body button {
+        width: 35%;
+        height: 20%; }
+      .containerConsolasOfertas .containerCarrousel .card-group .card .card-body .modal-dialog {
+        margin-top: 30%; }
+  .containerConsolaOferta {
+    margin: 30px 20px 20px 20px; }
+    .containerConsolaOferta .card-group {
+      display: block; }
+      .containerConsolaOferta .card-group .card img {
+        height: auto; }
+      .containerConsolaOferta .card-group .card .card-body .card-title {
+        font-size: 20pt; }
+      .containerConsolaOferta .card-group .card .card-body .card-text {
+        font-size: 15pt; }
+      .containerConsolaOferta .card-group .card .card-body button {
+        width: 35%;
+        height: 20%; }
+      .containerConsolaOferta .card-group .card .card-body .modal-dialog {
+        margin-top: 30%; }
+  /*-------------------------------------------- fin responsive Ofertas--------------------------------------------------------*/
+  /*---------------------------------------------Comienzo del responsive quienes somos -----------------------------------------*/
+  .parrafoInicial {
+    text-align: center;
+    font-size: 19pt;
+    margin: 20px;
+    font-weight: bold; }
+  .presentacion {
+    text-align: center;
+    font-size: 16pt;
+    margin-top: 30px;
+    font-weight: bold; }
+  .containerFigures {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .containerFigures .card {
+      margin: 20px; }
+      .containerFigures .card .card-body {
+        font-size: 14pt; }
+  .Organizar .containerMision {
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .Organizar .containerFilosofia {
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .Organizar .containerVision {
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .organizarExperiencias .usuarios {
+    display: block; }
+    .organizarExperiencias .usuarios .usuario img {
+      width: auto;
+      height: 40vh;
+      margin-left: 30%;
+      margin-right: 30%; }
+    .organizarExperiencias .usuarios .usuario p {
+      margin-left: 20%;
+      margin-right: 20%;
+      text-align: justify;
+      font-size: 14pt; }
+    .organizarExperiencias .usuarios .usuario .footerExperiencias {
       text-align: center;
-      color: black;
-      font-size: 40px; }
-      .contenedor .form .form-header .form-titulo span {
-        color: black;
-        text-align: center;
-        font-size: 40px; } }
+      font-weight: bold; }
+  .organizarExperiencias .usuariosAbajo {
+    display: block; }
+    .organizarExperiencias .usuariosAbajo .usuario img {
+      width: auto;
+      height: 40vh;
+      margin-left: 30%;
+      margin-right: 30%; }
+    .organizarExperiencias .usuariosAbajo .usuario p {
+      margin-left: 20%;
+      margin-right: 20%;
+      text-align: justify;
+      font-size: 14pt; }
+  .containerContacto .tituloContacto {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px; }
+  .containerContactar {
+    display: block; }
+    .containerContactar .mapUbicacion {
+      margin-left: 0px;
+      width: 12vw;
+      height: 12vh; }
+    .containerContactar .formulario {
+      margin-left: 0px; }
+      .containerContactar .formulario form {
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0px;
+        padding: 15px 15px 15px 15px; }
+        .containerContactar .formulario form label {
+          margin-bottom: 10px;
+          font-size: 13pt;
+          text-align: left; }
+        .containerContactar .formulario form .centrar {
+          text-align: center;
+          font-size: 15pt; }
+        .containerContactar .formulario form input {
+          padding: 0px -20px 0px -20px;
+          margin-bottom: 10px; }
+        .containerContactar .formulario form .checkbox {
+          margin-top: 5px;
+          margin-left: 5px; }
+        .containerContactar .formulario form span {
+          margin: 0px 25px 0px 25px;
+          text-align: center; }
+        .containerContactar .formulario form .enviar {
+          padding: 5px 5px 5px 5px; } }
