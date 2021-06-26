@@ -984,7 +984,7 @@
                 
                 a{
                     img{
-                    height: 24vh;
+                    height: auto;
                     }
                 }
                 
@@ -1026,7 +1026,12 @@
     .containerPs3{
 
         .card-body{
-    
+        
+                    img{
+                    height: auto;
+                    }
+
+
             .modal-dialog{
                 margin-top: 50%;
             }

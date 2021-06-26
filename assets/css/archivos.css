@@ -679,7 +679,7 @@ footer {
   .videoJuegos .containerJuegos .card-deck .card .card-body .modal-dialog {
     margin-top: 50%; }
   .containerConsolas .card-deck .card a img {
-    height: 24vh; }
+    height: auto; }
   .containerConsolas .card-deck .card .card-body .modal-dialog {
     margin-top: 50%; }
   .containerCuentas .card-deck .card .card-body .modal-dialog {
@@ -687,6 +687,8 @@ footer {
   .containerCarrusel .carousel-item .image {
     width: 100%;
     height: 40vh; }
+  .containerPs3 .card-body img {
+    height: auto; }
   .containerPs3 .card-body .modal-dialog {
     margin-top: 50%; }
   .containerPs4 .card-body .modal-dialog {
