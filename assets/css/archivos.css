@@ -675,7 +675,7 @@ footer {
         text-decoration: none;
         padding: 20px 20px 20px 20px; }
   .videoJuegos .containerJuegos .card-deck .card a img {
-    height: 24vh; }
+    height: auto; }
   .videoJuegos .containerJuegos .card-deck .card .card-body .modal-dialog {
     margin-top: 50%; }
   .containerConsolas .card-deck .card a img {
