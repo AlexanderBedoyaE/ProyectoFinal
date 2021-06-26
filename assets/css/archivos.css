@@ -686,8 +686,8 @@ footer {
     margin-top: 50%; }
   .containerCarrusel .carousel-item .image {
     width: 100%;
-    height: 40vh; }
-  .containerPs3 .card-body img {
+    height: auto; }
+  .containerPs3 .card-img-top {
     height: auto; }
   .containerPs3 .card-body .modal-dialog {
     margin-top: 50%; }
@@ -701,7 +701,7 @@ footer {
       transform: rotateY(-15px);
       box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2); }
     .containerCarrousel .carousel-inner .card-group .card .card-img-top {
-      height: 25vh; }
+      height: auto; }
     .containerCarrousel .carousel-inner .card-group .card .card-body {
       text-align: center; }
       .containerCarrousel .carousel-inner .card-group .card .card-body .card-title {
@@ -748,7 +748,7 @@ footer {
     .containerConsolasOfertas .containerCarrousel {
       width: 110%; }
       .containerConsolasOfertas .containerCarrousel .card-group .card img {
-        height: 30vh; }
+        height: auto; }
       .containerConsolasOfertas .containerCarrousel .card-group .card .card-body .modal-dialog {
         margin-top: 50%; }
   .containerConsolaOferta {
@@ -766,7 +766,12 @@ footer {
     margin-top: 30px;
     font-weight: bold; }
   .containerFigures {
-    display: block; }
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%; }
   .Organizar .containerMision {
     text-align: justify;
     margin-left: 20px;
@@ -780,7 +785,10 @@ footer {
     margin-left: 20px;
     margin-right: 20px; }
   .organizarExperiencias .usuarios {
-    display: block; }
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
     .organizarExperiencias .usuarios .usuario img {
       width: auto;
       height: 40vh;
@@ -793,7 +801,10 @@ footer {
       text-align: center;
       font-weight: bold; }
   .organizarExperiencias .usuariosAbajo {
-    display: block; }
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
     .organizarExperiencias .usuariosAbajo .usuario img {
       width: auto;
       height: 40vh; }

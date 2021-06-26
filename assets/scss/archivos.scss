@@ -1018,19 +1018,18 @@
         .carousel-item{
             .image{
                 width: 100%;
-                height: 40vh;
+                height: auto;
             }
         }
     }
     
     .containerPs3{
-
-        .card-body{
         
-                    img{
-                    height: auto;
-                    }
-
+        .card-img-top{
+            height: auto;
+        }
+        
+        .card-body{
 
             .modal-dialog{
                 margin-top: 50%;
@@ -1069,7 +1068,7 @@
                     box-shadow: 0px 12px 16px rgba(0,0,0,0.2);
                 }
                     .card-img-top{
-                        height: 25vh;
+                        height: auto;
                     }
     
                     .card-body{
@@ -1176,7 +1175,7 @@
     
                 .card{
                     img{
-                        height: 30vh;
+                        height: auto;
                     }
                     .card-body{
                         .modal-dialog{
@@ -1220,6 +1219,11 @@
 
     .containerFigures{
         display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
     }
 
     .Organizar{        
@@ -1246,6 +1250,9 @@
     .organizarExperiencias{
         .usuarios{
             display: block;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
             .usuario{
                 
                 img{
@@ -1269,6 +1276,9 @@
 
         .usuariosAbajo{
             display: block;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
             .usuario{
                 img{
                     width: auto;
